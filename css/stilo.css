@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+}
+body,ul,li,p, h1{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:rgb(192, 192, 194);
+}
+
+body{
+    background-color: rgb(26, 25, 25);
+}
+.header{
+    background-color: rgb(3, 99, 3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 15px;
+    position: relative;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 90%;
+  background-color: rgb(33, 32, 32);
+  border-radius: 12px;
+  list-style: none;
+  min-width: 100px;
+  z-index: 1000;
+}
+.espaco{
+    height: 10vh;
+}
+.submenu li a{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin: 7px 0px;
+    font-size: 1rem;
+
+}
+.submenu.active {
+  display: block;
+}
+
+main{
+    color: white;
+}
+#pesquisa{
+    display: flex;
+    width: 20vh;
+    margin: 1.2vh;
+    align-items: center;
+    background-color: #3c3c3c;
+    padding: 10px 10px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+.cards img{
+     display: grid;
+     grid-template-rows: auto;
+     height: 100px;
+     border-radius: 50%;
+     margin: 22px;
+}
+.card{
+    text-align: center;
+    border-radius: 5%;
+    font-size: 1rem;
+    margin-left: 12px;   
+}
+.card:hover{
+       background-color: #3c3c3c84;
+       transition: 0.3s;
+}
+.genero{
+    margin-top: 30vh;
+    width: 90%;
+    margin-left: 20px;
+}
+.genero h2{
+    text-align: center;
+}
+
+.artistas{
+    display: flex;  
+    margin-top: 10vh;
+}
+.artistas img{
+    border: 16px solid #3c3c3c84;
+    width:100px;
+    height: 600px;
+    margin-left: 30px;
+    flex: 1;
+}
+.texto{
+    flex: 1;
+}
+.footer{
+    width: 100%;
+    background-color: #3c3c3c84;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1,8vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
